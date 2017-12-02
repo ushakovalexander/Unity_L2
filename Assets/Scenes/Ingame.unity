@@ -142,6 +142,7 @@ MonoBehaviour:
   columns: 10
   rows: 10
   spacing: 1
+  blockerSpawnProbability: 0.1
 --- !u!4 &193380578
 Transform:
   m_ObjectHideFlags: 0

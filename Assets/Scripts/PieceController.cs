@@ -10,6 +10,7 @@ public class PieceController : MonoBehaviour {
 
   public float tweenRemoveDuration = 0.5f;
   public float tweenMoveDonwDuration = 0.5f;
+
   public event Action<PieceController> OnPieceClickedEvent;
 
   private SpriteRenderer spriteRenderer;
@@ -22,7 +23,7 @@ public class PieceController : MonoBehaviour {
     this.colIndex = colIndex;
     this.rowIndex = rowIndex;
   }
-  
+
   public void OnMouseDown() {
     if(OnPieceClickedEvent != null) {
       OnPieceClickedEvent(this);
