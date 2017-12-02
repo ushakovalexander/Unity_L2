@@ -1,2 +1,5 @@
 /Assembly-CSharp.csproj
 /Temp
+/Library
+/obj
+*.sln
