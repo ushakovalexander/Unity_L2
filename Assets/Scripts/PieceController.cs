@@ -37,6 +37,10 @@ public class PieceController : MonoBehaviour {
 
   public void Remove() {
     spriteRenderer.sortingOrder++;
+    CircleCollider2D collider = GetComponent<CircleCollider2D>();
+    if(collider != null) {
+      collider.enabled = false;
+    }
     AnimateRemove();
     Destroy(gameObject, tweenRemoveDuration);
   }
